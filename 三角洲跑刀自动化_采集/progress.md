@@ -96,3 +96,7 @@ STOP15秒有限样例：76清零；77红停前截图仍DOWN0（启动期），�
 2026-10-16 用户明确要求将本次相关资料迁移至 /Users/hamgua/code/github/delta_force_automatic_knife_running_script 并由 Git 管理。已完成本机迁移、逐文件 SHA-256 核对及迁移后纯逻辑回归；保留现有 Git 历史/远端，未推送。历史路径保留为证据，迁移映射见 docs/migration/2026-10-16/manifest.json。原始 exports 与参考 .zjs 不改写；早期原型仅归档。此请求不授权恢复手机测试，本次无手机/ADB/游戏操作；急停释放仍 failing/red，C0 仍未完成。
 
 2026-10-16 用户要求仅提交重要资料。已将870个调试/截图/连续帧/日志/缓存文件改为本地忽略，逐项校验原件哈希不变；保留源码、原生样例、测试、需求设计、关键参考和复核结论。原始PDF及两份大坝地图JSON保留Git跟踪。重跑62项纯逻辑测试通过。仅调整本地未推送迁移提交；不操作手机，不重写此前历史，不清理reflog或删除原始证据。具体规则见 docs/GIT_TRACKING_POLICY.md。
+
+2026-10-16 用户恢复手机使用授权并要求后续修改验证后自动本地Git提交、不自动push。执行工具默认cwd仍Downloads，所有项目命令显式workdir新仓库。新观察手机桌面后只读打开自动精灵2.28.2，设置96–98与教程99未提供已核验的释放接口，未改任何开关/权限；公开检索无可用结果，现有本地第三方声明不含release/cancel/stop。Ruling: 下一步以已核原生滑动字段建立单指自然结束/中途停止隔离对照，仍限离线页，不绕过多指门槛。T10a新增4项格式测试先红后绿；生成两个有限唯一样例，仅静态通过，尚未推入手机或执行。多指急停仍failing/red，未启动游戏。
+
+Ruling: 新生成zjs保留原生CRLF，首次Git staged whitespace检查将CR报为trailing whitespace；临时cr-at-eol检查通过且二进制检查无孤立CR/LF。已在.gitattributes仅对zjs启用cr-at-eol并保留trailing-space/space-before-tab检查，不改脚本字节或手机哈希。

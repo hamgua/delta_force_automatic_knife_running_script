@@ -19,5 +19,21 @@
     "sha256": "82071dac7d11b16aceb654cd6edff507e66ea387eb27948e151137231df4dd65",
     "duration_ms": 5000,
     "source": "known native gesture fields; modified duration/path only"
+  },
+  {
+    "file": "ZZ_TOUCH_20261016_SINGLE_MOVE.zjs",
+    "bytes": 461,
+    "sha256": "f04ba2a069b26c25050c8085ae8dbe7c857ecf97e6d26c54c1c7487901425c61",
+    "duration_ms": 1200,
+    "source": "exports/ZZ_TOUCH_20261016_NATIVE.zjs single swipe; duration/path only",
+    "scope": "OFFLINE_DIAGNOSTIC_ONLY"
+  },
+  {
+    "file": "ZZ_TOUCH_20261016_SINGLE_STOP.zjs",
+    "bytes": 462,
+    "sha256": "dbf5f3e0ab71622f06da95493b32884e358e9a3cf65fa55329a5114bcac1d417",
+    "duration_ms": 15000,
+    "source": "exports/ZZ_TOUCH_20261016_NATIVE.zjs single swipe; duration/path only",
+    "scope": "OFFLINE_DIAGNOSTIC_ONLY"
   }
 ]

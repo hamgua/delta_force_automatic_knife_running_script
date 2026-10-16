@@ -32,7 +32,7 @@
 在项目根目录运行：
 
 ```sh
-node --test 三角洲跑刀自动化_采集/sandbox_protocol/protocol.test.cjs 三角洲跑刀自动化_采集/touch_probe/observer.test.cjs 三角洲跑刀自动化_采集/touch_probe/scripts.test.cjs
+node --test 三角洲跑刀自动化_采集/sandbox_protocol/protocol.test.cjs 三角洲跑刀自动化_采集/touch_probe/observer.test.cjs 三角洲跑刀自动化_采集/touch_probe/scripts.test.cjs 三角洲跑刀自动化_采集/touch_probe/single-finger.test.cjs
 ```
 
 本地测试不能替代手机实证。禁止在真实业务界面重跑历史触控样例，禁止未验证急停即开始对局。
