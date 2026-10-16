@@ -1,0 +1,2 @@
+{"repeatCount":1,"pauseOnFail":true,"count":1,"minVerCode":2015000,"minVerName":"2.15.0","screenWidth":1240,"screenHeight":2772,"screenDpi":3.5,"lastSaveScreenWidth":1240,"lastSaveScreenHeight":2772,"lastSaveScreenDpi":3.5,"savedVerCode":2028020,"savedVerName":"2.28.2","delay":"","description":""}
+{"type":"运行JS代码","delayUnit":1,"jsCode":"zdjl.setVar('dfC0Probe','JS20261016','global');\nalert('JS_PROBE '+zdjl.getVar('dfC0Probe','global')); "}

@@ -1,0 +1,4 @@
+{"repeatCount":1,"pauseOnFail":true,"count":3,"minVerCode":2027000,"minVerName":"2.27.0","screenWidth":1240,"screenHeight":2772,"screenDpi":3.5,"lastSaveScreenWidth":1240,"lastSaveScreenHeight":2772,"lastSaveScreenDpi":3.5,"savedVerCode":2028020,"savedVerName":"2.28.2","delay":"","description":""}
+{"type":"系统提示","delayUnit":1,"promptType":"alert","promptText":"PARENT 20261016","promptTitle":"PARENT BEFORE","showPosition":"default","playAudio":"false","useVibrator":false}
+{"type":"执行脚本","delayUnit":1,"filePath":"ZZ_DF_SANDBOX_CHILD.zjs","runArgs":"ARG20261016"}
+{"type":"系统提示","delayUnit":1,"promptType":"alert","promptText":"RETURN VERIFIED MARKER","promptTitle":"PARENT AFTER","showPosition":"default","playAudio":"false","useVibrator":false}

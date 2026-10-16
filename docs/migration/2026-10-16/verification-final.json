@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-16",
+  "phase": "after removing verified move sources, before local commit",
+  "file_hashes_verified": 3280,
+  "symlinks_verified": 4,
+  "removed_source_roots_verified": 153,
+  "copy_sources_retained": true,
+  "remote_config_unchanged": true,
+  "node_tests": {
+    "passed": 62,
+    "failed": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "syntax_checks": [
+    {
+      "path": "三角洲跑刀自动化_采集/sandbox_protocol/protocol.js",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "path": "三角洲跑刀自动化_采集/touch_probe/observer.js",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "phone_operations": false,
+  "network_operations": false,
+  "remaining_gate": "Emergency touch release failing/red; C0 incomplete. No gameplay authorized by migration."
+}

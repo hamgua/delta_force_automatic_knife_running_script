@@ -1,0 +1,44 @@
+# OS/editor/cache and secrets
+.DS_Store
+**/__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local dependency installers and APK extraction
+/local-tools/
+
+# Bulk historical captures/caches: retain only the two useful dam data snapshots
+/artifacts/*
+!/artifacts/legacy-tmp/
+/artifacts/legacy-tmp/*
+!/artifacts/legacy-tmp/kdtest/
+/artifacts/legacy-tmp/kdtest/*
+!/artifacts/legacy-tmp/kdtest/df/
+/artifacts/legacy-tmp/kdtest/df/*
+!/artifacts/legacy-tmp/kdtest/df/daba_all.json
+!/artifacts/legacy-tmp/kdtest/df/daba_data.json
+
+# Diagnostic screenshots and frame sequences, NOT production recognition templates
+/三角洲跑刀自动化_采集/evidence/
+/三角洲跑刀自动化_采集/touch_probe/burst/
+/三角洲单人跑刀_自动精灵包/诊断记录/**/*.png
+/三角洲单人跑刀_自动精灵包/诊断记录/**/*.jpg
+/三角洲单人跑刀_自动精灵包/诊断记录/**/*.jpeg
+/references/attachments/
+/references/context/
+/references/自动精灵_运行条件核对.png
+
+# Raw execution logs and generated/obsolete probe outputs
+*.log
+/三角洲跑刀自动化_采集/touch_probe/surface-data-url.txt
+/三角洲跑刀自动化_采集/touch_probe/observer-v1.js
+/三角洲跑刀自动化_采集/touch_probe/surface-v1.html
+
+# Full machine-specific migration audit stays local; summary docs stay tracked
+/docs/migration/2026-10-16/manifest.json
+/docs/migration/2026-10-16/git-filter-local.json
+/scripts/migrate_20261016.py

@@ -1,0 +1,23 @@
+[
+  {
+    "file": "ZZ_TOUCH_20261016_MOVE.zjs",
+    "bytes": 618,
+    "sha256": "ecfcf2bd0f8c32f2e15df048731cf5e732d863fb5ad3f67db8446102ef05b433",
+    "duration_ms": 1200,
+    "source": "exports/ZZ_TOUCH_20261016_NATIVE.zjs"
+  },
+  {
+    "file": "ZZ_TOUCH_20261016_STOP.zjs",
+    "bytes": 620,
+    "sha256": "b2174f8f6e98ff8ec7f47462bab9c93a4038b2e972832d8dd37e2a9ba7d749ab",
+    "duration_ms": 15000,
+    "source": "exports/ZZ_TOUCH_20261016_NATIVE.zjs"
+  },
+  {
+    "file": "ZZ_TOUCH_20261016_STOP_FAST.zjs",
+    "bytes": 618,
+    "sha256": "82071dac7d11b16aceb654cd6edff507e66ea387eb27948e151137231df4dd65",
+    "duration_ms": 5000,
+    "source": "known native gesture fields; modified duration/path only"
+  }
+]

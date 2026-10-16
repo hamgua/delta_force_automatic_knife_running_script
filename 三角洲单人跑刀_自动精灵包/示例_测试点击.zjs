@@ -1,0 +1,5 @@
+{"repeatCount":0,"pauseOnFail":true,"count":4,"description":"格式自检: 连续点屏幕中心2次+上滑1次+点击左下, 用于验证 .zjs 导入和坐标生效 (720x1280 云手机)","minVerCode":2026000,"minVerName":"2.26.0","screenWidth":720,"screenHeight":1280,"screenDpi":2,"lastSaveScreenWidth":720,"lastSaveScreenHeight":1280,"lastSaveScreenDpi":2,"savedVerCode":2027020,"savedVerName":"2.27.2","delay":"150","delayUnit":0}
+{"type":"点击","duration":"50","delay":"500","delayUnit":0,"posData":{"type":"location","x":"50%","y":"50%"}}
+{"type":"点击","duration":"50","delay":"800","delayUnit":0,"posData":{"type":"location","x":"50%","y":"50%"}}
+{"type":"滑动","duration":"300","delay":"500","delayUnit":0,"startPos":{"type":"location","x":"50%","y":"70%"},"endPos":{"type":"location","x":"50%","y":"40%"}}
+{"type":"点击","duration":"50","delay":"500","delayUnit":0,"posData":{"type":"location","x":"20%","y":"88%"}}

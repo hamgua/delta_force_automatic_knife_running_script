@@ -1,0 +1,20 @@
+[
+  {
+    "name": "ZZ_C0_20261016_CHILD.zjs",
+    "bytes": 3829,
+    "sha256": "49c3879cad135b7249543083403f266b44b21e69a9d45bee39bcdc6fe1493182",
+    "actions": 1
+  },
+  {
+    "name": "ZZ_C0_20261016_PARENT.zjs",
+    "bytes": 4789,
+    "sha256": "bb3165dcff87945342c04e84da94c1d0bc75f27667b6c372b6c79179992b4e98",
+    "actions": 3
+  },
+  {
+    "name": "ZZ_C0_20261016_NEG_PARENT.zjs",
+    "bytes": 1552,
+    "sha256": "fb973e9f4384ead86220d4ef123356553a077c339c348e84f35130d6b6871d18",
+    "actions": 3
+  }
+]

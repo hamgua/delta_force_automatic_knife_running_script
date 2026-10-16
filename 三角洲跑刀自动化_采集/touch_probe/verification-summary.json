@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-16",
+  "local_node_tests": {
+    "pass": 62,
+    "fail": 0,
+    "touch_probe": 19,
+    "prior_protocol": 43
+  },
+  "native_gate": "failing/red",
+  "game_launched": false,
+  "checks": [
+    "initial 10 local exports unchanged against initial manifest",
+    "3 touch generated SHA256 and finite native JSON headers verified",
+    "95 evidence screenshots continuous, nonempty JPEG bytes (01–50 keep historical png names)",
+    "26 finite burst frames retained",
+    "traceability, actual failing phone tests and deferred lobby documented"
+  ],
+  "not_run": [
+    "pytest",
+    "ruff",
+    "lint",
+    "typecheck"
+  ],
+  "commands": [
+    "node --test sandbox_protocol/protocol.test.cjs touch_probe/observer.test.cjs touch_probe/scripts.test.cjs (all paths absolute under collection root)",
+    "node --check touch_probe/observer.js",
+    "node --check sandbox_protocol/protocol.js",
+    "python3 local integrity verification (this record)"
+  ]
+}

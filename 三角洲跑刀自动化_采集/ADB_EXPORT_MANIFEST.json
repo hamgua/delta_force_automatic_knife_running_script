@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-16",
+  "transport": "ADB USB pull; no phone write",
+  "source_directory": "/sdcard/自动精灵",
+  "source_hash_method": "adb shell sha256sum, before pull",
+  "source": "契约§6 V08 / Task5 / 设计F1 / AGENTS§11 / 用户ADB复制授权",
+  "status": "verified (copy integrity and static parsing subcases only)",
+  "files": [
+    {
+      "name": "ZZ_DF_SANDBOX_BASIC.zjs",
+      "source": "/sdcard/自动精灵/ZZ_DF_SANDBOX_BASIC.zjs",
+      "bytes": 646,
+      "sha256": "27e364a0323a368644000e8bfabefa8c050f10d1e1ced9cfa6d297e6baf0c976",
+      "actions": 2,
+      "types": [
+        "系统提示",
+        "系统提示"
+      ]
+    },
+    {
+      "name": "ZZ_DF_SANDBOX_CHILD.zjs",
+      "source": "/sdcard/自动精灵/ZZ_DF_SANDBOX_CHILD.zjs",
+      "bytes": 471,
+      "sha256": "92462194a763a97c66f8e3bb53ad0766f2bc1e8d7a13dd125de878f7cbadbb7f",
+      "actions": 1,
+      "types": [
+        "系统提示"
+      ]
+    },
+    {
+      "name": "ZZ_DF_SANDBOX_IMAGE.zjs",
+      "source": "/sdcard/自动精灵/ZZ_DF_SANDBOX_IMAGE.zjs",
+      "bytes": 21347,
+      "sha256": "613423f4dc14392ef621f03614d04b3cc65aa3561d9c9eaf85d688647d473c84",
+      "actions": 1,
+      "types": [
+        "系统提示"
+      ]
+    },
+    {
+      "name": "ZZ_DF_SANDBOX_NEG_ZZ_DF_SANDBOX_PARENT.zjs",
+      "source": "/sdcard/自动精灵/ZZ_DF_SANDBOX_NEG_ZZ_DF_SANDBOX_PARENT.zjs",
+      "bytes": 778,
+      "sha256": "220f73eb21929c5c380f4256bca3c6783a383345ccd8593580663d25db2f8df1",
+      "actions": 3,
+      "types": [
+        "系统提示",
+        "执行脚本",
+        "系统提示"
+      ]
+    },
+    {
+      "name": "ZZ_DF_SANDBOX_PARENT.zjs",
+      "source": "/sdcard/自动精灵/ZZ_DF_SANDBOX_PARENT.zjs",
+      "bytes": 812,
+      "sha256": "632d72c40aedbd4cb7c96e8058994ed84cb873dc5aba22938e8ea2533af67d06",
+      "actions": 3,
+      "types": [
+        "系统提示",
+        "执行脚本",
+        "系统提示"
+      ]
+    },
+    {
+      "name": "ZZ_DF_SANDBOX_RECOGNITION.zjs",
+      "source": "/sdcard/自动精灵/ZZ_DF_SANDBOX_RECOGNITION.zjs",
+      "bytes": 851,
+      "sha256": "9fc09311dfbc502f702fd6d9671be88e387d2c136764e2c413d9de0d951ed247",
+      "actions": 2,
+      "types": [
+        "识别屏幕",
+        "设置变量"
+      ]
+    },
+    {
+      "name": "ZZ_DF_SANDBOX_STATE_ZZ_DF_SANDBOX_CHILD.zjs",
+      "source": "/sdcard/自动精灵/ZZ_DF_SANDBOX_STATE_ZZ_DF_SANDBOX_CHILD.zjs",
+      "bytes": 1097,
+      "sha256": "4a0f9bf150e4a11a06627353b9f81088160cb0ccfe7f2c77bf6be6bf54865c60",
+      "actions": 3,
+      "types": [
+        "系统提示",
+        "设置变量",
+        "系统提示"
+      ]
+    },
+    {
+      "name": "ZZ_DF_SANDBOX_STOP_ZZ_DF_SANDBOX_PARENT.zjs",
+      "source": "/sdcard/自动精灵/ZZ_DF_SANDBOX_STOP_ZZ_DF_SANDBOX_PARENT.zjs",
+      "bytes": 832,
+      "sha256": "b404b17c65360f65e823a150740cfe1523a7fbeed30f667e408faa35639b7b2f",
+      "actions": 3,
+      "types": [
+        "系统提示",
+        "执行脚本",
+        "系统提示"
+      ]
+    },
+    {
+      "name": "ZZ_EMPTY_ZZ_DF_SANDBOX_RECOGNITION.zjs",
+      "source": "/sdcard/自动精灵/ZZ_EMPTY_ZZ_DF_SANDBOX_RECOGNITION.zjs",
+      "bytes": 1149,
+      "sha256": "2acf42e3e36d891e5438a172a7b4912a0e378462b6f8adfd6fe4c41c9650bfd2",
+      "actions": 2,
+      "types": [
+        "识别屏幕",
+        "设置变量"
+      ]
+    },
+    {
+      "name": "ZZ_NEG_ZZ_DF_SANDBOX_IMAGE.zjs",
+      "source": "/sdcard/自动精灵/ZZ_NEG_ZZ_DF_SANDBOX_IMAGE.zjs",
+      "bytes": 21347,
+      "sha256": "7d00ddd5b0da847dc2b0b1a7224df5048134864162686e82a5af670c8e301c69",
+      "actions": 1,
+      "types": [
+        "系统提示"
+      ]
+    }
+  ],
+  "image_checks": [
+    {
+      "file": "ZZ_DF_SANDBOX_IMAGE.zjs",
+      "template_sha256": "4c0c40d4f7b8b8a12377433be62dc8f57a64ac6fee444fc068e591ecebdd7d3f",
+      "limitArea": "51.2% 77% 72.1% 81.6%",
+      "templateScreenHeight": 2578
+    },
+    {
+      "file": "ZZ_NEG_ZZ_DF_SANDBOX_IMAGE.zjs",
+      "template_sha256": "4c0c40d4f7b8b8a12377433be62dc8f57a64ac6fee444fc068e591ecebdd7d3f",
+      "limitArea": "15.3% 25.8% 35.2% 32%",
+      "templateScreenHeight": 2578
+    }
+  ],
+  "not_verified": [
+    "new-name native import/readback",
+    "full .zjs schema compatibility",
+    "landscape calibration",
+    "business result contract",
+    "touch-release stop",
+    "persistent state"
+  ]
+}

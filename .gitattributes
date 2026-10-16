@@ -1,0 +1,8 @@
+# Native zjs streams and original evidence must remain byte-exact
+*.zjs -text
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.pdf -text
+*.apk -text
+*.dmg -text
