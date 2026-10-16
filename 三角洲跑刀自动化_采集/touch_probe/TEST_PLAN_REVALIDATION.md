@@ -25,3 +25,22 @@
 用户恢复手机并授权后续验证后自动本地提交。已重新观察当前桌面，只读查看自动精灵设置与教程96–99；未修改任何开关/权限。100旧页保留原先事件计数，101刷新仅为新单指实验零基线，不作为旧多指故障恢复证据。
 新增T10a四项测试先红后绿，与原62项合计66项通过。两个新SINGLE_MOVE/SINGLE_STOP分别为1200/15000ms单指滑动；ADB先核目标不存在后复制，SHA256均一致。原生加载和实跑尚未核验，T10b/c仍planned；全局F4仍failing/red、C0未完成，不启动游戏。
 历史第7项“非Git目录”只描述当时状态；本目录现已迁入Git，截图和原始日志按用户要求仅本地忽略。
+
+## 2026-10-16 单指真机复核：缩小范围，不解除阻塞
+
+T10b verified：原生回读1200ms，103零基线后执行一次，104为DOWN1/MOVE12/UP1、ACTIVE0/TOUCHES0。T10c failing/red：105回读15000ms；106沿用已归零的单指自然结束计数；107原生运行中ACTIVE1/TOUCHES1；红停后108仍1且没有新增up/cancel；110启动后34.3秒仍1，页面时钟更新。109约15.5秒因启动与down时间差只记中间观察，不单独当截止证明。T10d只读检查已执行，未验证任何释放接口。
+
+因此问题不只限于多指；精确计数、证据与限制见TOUCH_STOP_FINDINGS.md。111关闭悬浮编辑器，无运行脚本；页面事件快照仍1，系统实时触点未知。C0与F4门槛保持原结论，未进入游戏、匹配、购买、背包、修改权限或设置。
+
+本批无生产代码修改；纯逻辑66项回归与原件/生成物哈希核验的最终命令和实际结果待收尾追加，不把真机失败当成本地测试失败或反之。
+
+### 本批最终本地复核
+
+- `node --test 三角洲跑刀自动化_采集/touch_probe/single-finger.test.cjs`：4/4通过。
+- `node --test 三角洲跑刀自动化_采集/sandbox_protocol/protocol.test.cjs 三角洲跑刀自动化_采集/touch_probe/observer.test.cjs 三角洲跑刀自动化_采集/touch_probe/scripts.test.cjs 三角洲跑刀自动化_采集/touch_probe/single-finger.test.cjs`：66/66通过、0失败、0跳过。
+- `node --check`检查observer.js和protocol.js：退出码0。
+- Python/hashlib：初始10份原生导出与ADB_EXPORT_MANIFEST一致；5份生成物字节数/SHA256一致；本批10张编号证据图和30帧均JPEG字节且复制哈希一致、Git忽略；progress.md保留HEAD全文前缀，追加式检查通过。
+- `file`核验102–111均666×1552 JPEG；`git check-ignore`核验原始图/帧/计时/log忽略；`git diff --check`通过。
+- 无生产代码变更；未运行pytest/ruff/lint/typecheck，不声称通过。新文档与实际手机失败一致，不能以66项绿解除F4。
+
+本轮提前安全收尾，按用户下班要求保持暂停；一次性22:01提醒已暂停，避免后台再次唤醒研发。恢复须用户明确说继续。

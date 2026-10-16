@@ -7,6 +7,8 @@
 
 ## 当前结果
 
-详细逐项状态见TEST_PLAN.md与TEST_PLAN_REVALIDATION.md。本地观察器/生成物19项通过；正常触控部分有手机实证；**急停释放failing/red，未进入游戏**。V1源码保留，新V2并列记录pointer与TouchEvent快照，不伪造释放。后续见NEXT_TASKS.md。
+详细逐项状态见TEST_PLAN.md与TEST_PLAN_REVALIDATION.md。本地观察器/生成物及单指约束23项通过（连同协议43项共66项）；正常触控部分有手机实证；**急停释放failing/red，未进入游戏**。V1源码保留，新V2并列记录pointer与TouchEvent快照，不伪造释放。后续见NEXT_TASKS.md。
 
 恢复后新增SINGLE_MOVE(1200ms)与SINGLE_STOP(15000ms)，仅在已重新核实的离线安全页比较单指与多指取消；不提供释放API，不代表已修复。来源与状态见TEST_PLAN T10a–d。single-finger.test.cjs可离线验证4项格式/哈希约束。
+
+单指真机对照结果：自然结束收到up、ACTIVE/TOUCHES归零；中途红停后未收到本次释放，超过原期限仍未归零。故不是仅多指问题。详见TOUCH_STOP_FINDINGS.md；仍禁止游戏，暂停恢复入口见NEXT_TASKS.md。
