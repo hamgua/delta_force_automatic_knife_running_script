@@ -1,0 +1,26 @@
+[
+  {
+    "file": "ZZ_TOUCH_20261017_API_CHECK.zjs",
+    "bytes": 809,
+    "sha256": "ffe0b6ca462848228808f439b69f92a384845078c11a69304e0d244223678b6b",
+    "scope": "OFFLINE_DIAGNOSTIC_ONLY",
+    "native_source": "sandbox_protocol/generated/ZZ_C0_20261016_CHILD.zjs",
+    "api_source": "official article 1380, checked 2026-10-17"
+  },
+  {
+    "file": "ZZ_TOUCH_20261017_RELEASE.zjs",
+    "bytes": 669,
+    "sha256": "389a645835c452eed08c3e1dc4ee91440b6fbd45bbc18b3f3c469633a8305c3b",
+    "scope": "OFFLINE_DIAGNOSTIC_ONLY",
+    "native_source": "sandbox_protocol/generated/ZZ_C0_20261016_CHILD.zjs",
+    "api_source": "official article 1380, checked 2026-10-17"
+  },
+  {
+    "file": "ZZ_TOUCH_20261017_EXPLICIT.zjs",
+    "bytes": 915,
+    "sha256": "2a5ec4ce2b97b57d17e1f7001be579e8b23978e3bc3fb19a982c3a7e5b692b3f",
+    "scope": "OFFLINE_DIAGNOSTIC_ONLY",
+    "native_source": "sandbox_protocol/generated/ZZ_C0_20261016_CHILD.zjs",
+    "api_source": "official article 1380, checked 2026-10-17"
+  }
+]

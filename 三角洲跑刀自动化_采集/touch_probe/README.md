@@ -12,3 +12,7 @@
 恢复后新增SINGLE_MOVE(1200ms)与SINGLE_STOP(15000ms)，仅在已重新核实的离线安全页比较单指与多指取消；不提供释放API，不代表已修复。来源与状态见TEST_PLAN T10a–d。single-finger.test.cjs可离线验证4项格式/哈希约束。
 
 单指真机对照结果：自然结束收到up、ACTIVE/TOUCHES归零；中途红停后未收到本次释放，超过原期限仍未归零。故不是仅多指问题。详见TOUCH_STOP_FINDINGS.md；仍禁止游戏，暂停恢复入口见NEXT_TASKS.md。
+
+## 2026-10-17 更新与暂停
+
+surface-compact.html是同语义核心的短传输诊断页，base64 URL 1862字符，不使用旧长URL；保留Pointer/TouchEvent独立计数、时钟和不清零visibility，省略MAX与历史。6项本地测试通过。官方touchUp样例与4项组合结构测试均仅限诊断；实际通过及未完成项见TOUCHUP_FINDINGS_2026-10-17.md。用户已暂停，不运行手机样例。

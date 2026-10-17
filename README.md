@@ -3,11 +3,11 @@
 本项目集中管理本次自动精灵脚本研发的需求、设计、参考资料、代码、原生导出、截图和验证记录。
 **当前不是可投入对局的成品：触控急停释放门槛仍为 failing/red，C0 协议仍未完成。**
 
-## 最新暂停状态（2026-10-16）
+## 最新暂停状态（2026-10-17）
 
-用户要求下班前暂停，本轮已提前安全收尾，等待明确恢复；不后台操作手机或继续研发。单指自然结束正常，但中途停止同样未收到释放，故F4仍未通过，不能进入游戏。
-本轮本地纯测试66/66通过；10份原生导出与5份生成物哈希未变。原始图/日志/连续帧仅本地保留。精确结论见 `三角洲跑刀自动化_采集/touch_probe/TOUCH_STOP_FINDINGS.md`，恢复入口见 `NEXT_TASKS.md`。
-后续按用户授权验证后自动普通本地提交，不自动push。
+用户明确要求暂停，已停止手机/ADB/实验；末次确认手机在桌面、无运行浮窗。官方touchUp存在且本机方法可用，显式单指自然完成已收到UP归零；但独立急停释放对照受前台切换cancel干扰，**F4仍未通过，不能进入游戏**。组合样例修正最低版本后未重新载入/运行，先前详情黑屏原因尚未确认。
+
+本机纯逻辑86/86通过，不等于真机门槛通过。精确结果见 `三角洲跑刀自动化_采集/touch_probe/TOUCHUP_FINDINGS_2026-10-17.md`；恢复入口见 `NEXT_TASKS.md`。只在用户明确恢复后继续，不后台研发。重要修改验证后自动普通本地提交，不push；截图/日志继续忽略。
 
 ## 从哪里继续
 
@@ -38,7 +38,7 @@
 在项目根目录运行：
 
 ```sh
-node --test 三角洲跑刀自动化_采集/sandbox_protocol/protocol.test.cjs 三角洲跑刀自动化_采集/touch_probe/observer.test.cjs 三角洲跑刀自动化_采集/touch_probe/scripts.test.cjs 三角洲跑刀自动化_采集/touch_probe/single-finger.test.cjs
+node --test 三角洲跑刀自动化_采集/sandbox_protocol/protocol.test.cjs 三角洲跑刀自动化_采集/touch_probe/observer.test.cjs 三角洲跑刀自动化_采集/touch_probe/scripts.test.cjs 三角洲跑刀自动化_采集/touch_probe/single-finger.test.cjs 三角洲跑刀自动化_采集/touch_probe/touchup.test.cjs 三角洲跑刀自动化_采集/touch_probe/surface-compact.test.cjs 三角洲跑刀自动化_采集/touch_probe/stop-release.test.cjs
 ```
 
 本地测试不能替代手机实证。禁止在真实业务界面重跑历史触控样例，禁止未验证急停即开始对局。

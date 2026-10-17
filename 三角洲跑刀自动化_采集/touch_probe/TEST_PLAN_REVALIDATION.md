@@ -44,3 +44,11 @@ T10b verified：原生回读1200ms，103零基线后执行一次，104为DOWN1/M
 - 无生产代码变更；未运行pytest/ruff/lint/typecheck，不声称通过。新文档与实际手机失败一致，不能以66项绿解除F4。
 
 本轮提前安全收尾，按用户下班要求保持暂停；一次性22:01提醒已暂停，避免后台再次唤醒研发。恢复须用户明确说继续。
+
+## 2026-10-17 恢复调查与最新暂停
+
+最新实证见TOUCHUP_FINDINGS_2026-10-17.md（T11a–e、T12a/b逐项与来源、状态、证据）。T11a纯VM10项、T11b API存在性、T11c显式单指自然完成、T12短页6项及真机可观察性已验证；T11d受切前台后cancel干扰，独立touchUp未运行，故deferred；T11e多指依赖未满足，继续deferred。F4仍failing/red、C0未完成。4项组合样例测试仅静态通过，元数据修正后尚未重新加载，不能宣称解决黑屏。
+
+暂停收尾在本机运行README列出的7个Node测试文件：86/86通过，0失败、0跳过。未运行手机、服务或游戏测试；pytest/ruff/typecheck未运行。112–122编号截图逐字节复制且哈希一致，原图/日志/网页全文继续Git忽略，克隆不包含这些证据。用户已明确暂停，禁止后台继续；仅在下次明确恢复后新观察手机。
+
+暂停提交前完整性补核：13份exports的工作区字节与HEAD完全一致；touch_probe旧5份、sandbox_protocol3份、touchup3份及组合1份生成物长度/SHA与各manifest一致；progress.md保留HEAD完整前缀。observer.js/protocol.js的node --check退出0；git diff --check通过，git ls-files -ci --exclude-standard为空。Git状态仅本次重要源文件/测试/样例/文档，原图/日志未暂存。首次尝试的根层ADB_EXPORT_MANIFEST.md路径不存在，未将该失败当成哈希核验；改以13份原始导出直接对HEAD逐字节验证。
